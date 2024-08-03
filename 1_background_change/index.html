@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <button type="button" class="btn">button</button>
+
+    <script>
+      const button = document.querySelector("button");
+      const body = document.querySelector("body");
+      const color = ["blue", "red", "green", "cyan", "black"];
+
+      function abs() {
+        const index = parseInt(Math.random() * color.length);
+        body.style.backgroundColor = color[index];
+      }
+      button.addEventListener("click", abs);
+    </script>
+  </body>
+</html>
